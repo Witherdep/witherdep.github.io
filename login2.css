@@ -1,0 +1,67 @@
+/* estilos da pesquisa */
+main div#janela_login {
+    width:860px;
+    margin:100px auto 30px;
+}
+
+main div#janela_login form {
+    width:470px;
+    margin:10px auto;
+}
+
+main div#janela_login form h2  {
+    font-family: sans-serif;
+    color:#c95389;
+}
+
+
+main div#janela_login form p {
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    background: #13ffad;
+    color: #661330;
+    padding: 10px;
+    border-radius: 5px;
+    width:120px;
+    text-align: center;
+}
+
+main div#janela_login form input[type="text"] {
+    width:280px;
+    padding:10px;
+    border:1px solid #c95389;/* estilos da pesquisa */
+    border-radius: 5px;
+    outline: none;
+}
+main div#janela_login form input[type="text"]:hover{
+    border:2px solid #c95389;/* estilos da pesquisa */
+}
+
+main div#janela_login form input[type="password"] {
+    width:280px;
+    padding:10px;
+    margin-top:15px;
+    border:1px solid #c95389;
+    border-radius: 5px;
+    outline: none;
+}
+main div#janela_login form input[type="password"]:hover{
+    border:2px solid #c95389;/* estilos da pesquisa */
+}
+main div#janela_login form input[type="submit"] {
+    display: block;
+    padding:10px 20px;
+    margin-top:18px;
+    color: #FFF;
+    border:0;
+    border-radius: 5px;
+    background-color: #c95389;
+    outline: none;
+    cursor: pointer;
+}
+main div#janela_login form input[type="submit"]:hover{
+    background-color: #13ffad;
+    color: #661330;
+}
+/* fim do estilo da pesquisa */

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrinho de Compras</title>
+
+    <link href="public\CSS\arquivos iniciais\css\bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="CSS\estilocarrinho.css">
+</head>
+<body>
+    <div class="container-fluid">
+    <h1>Carrinho de Compras</h1>
+    <div id="produtos">
+        <div class="produto">
+            <h2>Produto 1</h2>
+            <p>Preço: R$10,00</p>
+            <button onclick="adicionarAoCarrinho('Produto 1',10.00)">Adicionar ao Carrinho</button>
+        </div>
+
+        <div class="produto">
+            <h2>Produto 2</h2>
+            <p>Preço: R$20,00</p>
+            <button onclick="adicionarAoCarrinho('Produto 2',20.00)">Adicionar ao Carrinho</button>
+        </div>
+
+
+    </div>
+    <button onclick="limparCarrinho">Limpar Carrinho</button>
+
+    <h2>Seu Carrinho</h2>
+    <ul id="carrinho"></ul>
+    <p id="total">Total: R$0,00</p>
+    <script src="script/scriptcarrinho.js"></script>
+    </div>
+</body>
+</html>

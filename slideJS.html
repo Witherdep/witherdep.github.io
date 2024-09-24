@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slideup slidedown e slidetoggle</title>
+    <link href="public\CSS\arquivos iniciais\css\bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        *{margin: 0;padding: 0;box-sizing: border-box;}
+        #sim{padding: 5px; text-align: center; margin: 0 auto;margin-top: 25px; background-color: aquamarine; width: 675px;justify-content: space-between;}
+        #bslidedown{border: 1px black solid;min-width: 325px;}
+        #bslideup{border: 1px black solid;min-width: 325px}
+        #bslidedown:hover{font-weight: 1000;cursor: pointer;}
+        #bslideup:hover{font-weight: 1000;cursor: pointer;}
+        #painel1 {margin: 0 auto; padding: 50px;text-align: center;width: 675px;background-color: aquamarine;display: none;}
+
+        #bslidetoggle{padding: 5px; text-align: center; margin: 0 auto;margin-top: 25px; background-color: aquamarine; width: 675px;justify-content: space-between;border: 1px black solid;min-width: 325px}
+        #bslidetoggle:hover{font-weight: 1000;cursor: pointer;}
+        #painel2 { margin: 0 auto; padding: 50px;text-align: center;width: 675px;background-color: aquamarine;display: none;}
+        
+        #circulorodante{margin: 25px; position: relative; width: 120px;height: 120px;background-color: aquamarine;border-radius: 50%;background-image: url("https://steamuserimages-a.akamaihd.net/ugc/2044121906874842494/2602B8BEDC80563B7DCEC6BFCE1F0A1DA7AB33F8/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false");background-size: contain;background-position: 50%;background-repeat: no-repeat;}
+        #circulorodante:hover{width: 125px;height: 125px;}
+
+        h2,h4{margin: 15px;}
+        #bclone{padding: 5px; text-align: center; margin: 0 auto;margin-top: 25px; background-color: aquamarine; width: 675px;justify-content: space-between;border: 1px black solid;min-width: 325px}
+        #bclone:hover{font-weight: 1000;cursor: pointer;}
+
+        @keyframes sim {
+        from   {transform: rotate(0deg);}
+        to  {transform: rotate(900deg);}
+        }      
+    </style>
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#bslidetoggle").click(function(){
+                $("#painel2").slideToggle("slow");
+            });
+
+            $('#bslidedown').click(function(){
+                $("#painel1").slideDown("slow");
+            })
+            $('#bslideup').click(function(){
+                $("#painel1").slideUp("slow");
+            })
+
+            
+            $( "#circulorodante" ).on( "click", function() {
+                $( "#circulorodante" ).animate({
+                    right:'-=1000px',    
+                    opacity: "toggle",
+                    transform: "rotate(45deg)"
+                        
+                    }, 5000,'linear', function() {
+                });
+                $( "#circulorodante" ).css({
+                    "animation-name":"sim",
+                    "animation-duration": "5000ms",
+                });
+
+                $('#texto').text("Ele não vai voltar :(")
+            });
+            
+            $( "#bclone").click(function(){
+                $('#circulorodante').clone(true).prependTo('#bclone');
+            });
+
+        });
+    </script>
+</head>
+<body>
+    <div class="container-fluid">
+    <H2>Slideup, Slidedown e Slidetoggle</H2>
+    <div id="sim" style="display: flex;">
+        <div id="bslidedown"> Esse botão tem a função slidedown, ao clicar o painel irá se abrir (deslizar para baixo)</div>
+        <div id="bslideup"> Esse botão tem a função slideup, ao clicar o painel irá se fechar (deslizar para cima)</div>
+    </div>
+    <div id="painel1"> sim. </div>
+
+    <div id="bslidetoggle"> Esse botão tem a função slidetoggle, ao clicar o painel irá se abrir ou fechar alternadamente</div>
+    <div id="painel2"> não.</div>
+
+    <h2>Animate, .css (e .text)</h2>
+    <h4 id="texto">clique</h4>
+    <div id="circulorodante"></div>
+
+    <h2>clone</h2>
+    <div id="bclone">clique para fazer um clone da última animação</div>
+    </div>
+</body>
+</html>

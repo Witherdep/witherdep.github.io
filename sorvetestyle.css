@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    margin-top: 50px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(252, 217, 217);
+    color: rgb(0, 0, 0);
+    width: auto;
+
+}
+
+
+#logo{
+    width: 8vw;
+    min-width: 75px;
+    margin-left: 75px;
+}
+
+.menu{
+    display: flex;
+    list-style: none;
+    gap: 1vw;
+}
+
+.menu a{
+    text-decoration: none;
+    color: rgb(50, 126, 212);
+    margin-right: 45px;
+    font-family: inter;
+    font-weight: 900;
+    line-height: 25px;
+    font-size: 20px;
+}
+
+#peca{
+    font-size: 40px;
+    text-align: center;
+    padding-left: 30px;
+    color: rgb(94, 233, 214);
+}
+
+#peca:hover{
+    color: rgba(255, 255, 255,0.4);
+}
+
+.redondinho{
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: rgb(87, 97, 238);
+    height: 115px;
+}
+.redondinho:hover{
+    color: rgba(240, 77, 56,0.4);
+}
+.menu a:hover{
+    color: rgb(32, 66, 255);
+}
+
+body{
+    background-image: url(fundosorvete2.png);
+    background-color: rgb(186, 224, 250);
+    background-repeat: repeat-y;
+    background-size: 100% ;
+}
+
+.container h3{
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #08201E;
+
+    
+}
+
+.rodape{
+
+    float: bottom;
+    height: 175px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(252, 217, 217);;
+    color: rgb(50, 126, 212);
+    padding-right: 535px;
+    padding-left: 15vw;
+    font-size: 15px;
+    font-weight: 500;
+    font-family: inter;
+    gap: 50px;
+    
+
+}
+
+footer li{
+    list-style: none;
+}
+
+footer ul #aaaa li{
+    margin-right: 50px;
+}
+
+footer span{
+    color: rgba(255, 98, 87, 0.952);
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+}
+
+footer a{
+    text-decoration: none;
+    color: chocolate;
+}
+
+.rodape a:hover{
+    color: rgb(255, 17, 0);
+
+}
+
+#sorvete{
+    width: 30vw;
+    max-width: 250px;
+}
+
+#sorvete:hover{
+    max-width: 300px;
+    width: 35vw;
+}
+
+#sorvetelink{
+    display: inline-block;
+    text-align: center;
+}
+.container{
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: rgb(186, 224, 250);
+    background-image: url(fundosorvete2.png);
+    background-repeat: repeat-y;
+    background-size: 100%;
+    width: auto;
+    height: auto;
+}
+
+#picole{
+    width: 30vw;
+    max-width: 200px;
+}
+
+#picole:hover{
+    max-width: 250px;
+    width: 35vw;
+}
+
+#sundae{
+    width: 30vw;
+    max-width: 250px;
+}
+
+#sundae:hover{
+    max-width: 300px;
+    width: 35vw;
+}
+
+.container ul{
+    margin: 120px;
+}
+
+.container ul p{
+    margin: 50px;
+    color: rgba(255, 98, 87, 0.952);
+    font-family: inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 19px;
+    text-decoration:underline double;
+}
+
+h3{
+    margin: 50px;
+    color: rgba(255, 98, 87, 0.952);
+    font-family: inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 19px;
+}
+p{
+    margin: 50px;
+    color: rgba(255, 98, 87, 0.952);
+    font-family: inter;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 45px;
+    line-height: 19px;
+}
