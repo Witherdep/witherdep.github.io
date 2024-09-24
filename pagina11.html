@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <title>Wither comissions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href="../arquivos iniciais/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+            body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .divcentro{
+                margin: 0 auto;
+            }
+            
+            .espaco{
+                display: flex; width: 0px;height: 0px;}
+
+            .listadeladinho{
+                display: inline;
+                margin: 5vw;
+                font-size: 25px;
+                color: aliceblue;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+            }
+            ul.sim{
+                display: inline-block;
+                text-align: center;
+                margin-right: 5%;
+            }
+            div ul a{
+                text-decoration: none;
+            }
+            
+            .portcomcon:hover{
+                color: blueviolet;
+            }
+            .carousel {
+                position: relative;
+                width: 80%;
+                max-width: 600px;
+                overflow: hidden;
+                border: 2px solid #ddd;
+                border-radius: 10px;
+                background-color: #fff;
+            }
+
+            .carousel img {
+                width: 100%;
+                display: none;
+            }
+
+            .carousel img.active {
+                display: block;
+            }
+
+            .controls {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+
+            .control {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 10px;
+                cursor: pointer;
+                user-select: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+        <div style="height: 100%; width: 85%; background-color: aliceblue;margin: 0 auto;padding-bottom: 15%;">
+            <div class="divcentro" style="background-color: lightblue; width: 85%; height: 50px;"></div>
+            <div class="divcentro" style="border-radius: 50%; width: 50vw;height: 50vw;
+            background-image: url(https://cdna.artstation.com/p/users/avatars/007/522/400/large/d3a5ec979ad34916a1c29a9c2ee3bc54.jpg?1697356482);
+            background-size: 100%;
+            max-width: 220px;max-height: 220px;margin-top: 5%;">
+            </div>
+            <p style="display: flex; justify-content: center; font-size: 7vw; text-align: center;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;color: blueviolet;padding-top: 0;text-decoration:double underline black; margin: 0 auto;">WITHER
+            </p>
+            <p style="text-align: center; display: flex; justify-content: center;font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;margin-top: 5%; color: violet;">Beginner artist from Brazil</p>
+
+            <div class="divcentro" style="background-color: aqua; margin: 2%; margin-top:10%;height: 100%;padding-bottom: 5%;">
+                    <div class="espaco">
+                    </div>            
+                    <div class="divcentro" style="background-color: lightblue; width: 95%;height: auto; margin-top: 1%; text-align: center;padding-bottom: 5%;">
+
+                        <ul class="sim">
+                            <a href="#portfolio"><li class="listadeladinho portcomcon">Portifolio</li></a>
+                            <a href="#comission"><li class="listadeladinho portcomcon">Comissions</li></a>
+                            <a href="#contact"><li class="listadeladinho portcomcon">Contact</li></a>
+                        </ul>
+
+                        <div class="carousel divcentro">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/097/906/large/wither-dep-deathbringer-completo-tortinho2.jpg?1708920886" alt="Imagem 1" class="active">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/098/502/large/wither-dep-geropronto1-artstation.jpg?1708922663" alt="Imagem 2">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/098/710/large/wither-dep-tonicos-artstation.jpg?1708923223" alt="Imagem 3">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/098/838/large/wither-dep-yardas1.jpg?1708923412" alt="Imagem 4">
+                            <img src="https://cdna.artstation.com/p/assets/images/images/073/790/512/large/wither-dep-frechafim.jpg?1710476563" alt="Imagem 5">
+                            <div class="controls">
+                                <div class="control" onclick="prevImage()">&#10094;</div>
+                                <div class="control" onclick="nextImage()">&#10095;</div>
+                            </div>
+                        </div>
+                    
+                        <script>
+                            let currentIndex = 0;
+                            const images = document.querySelectorAll('.carousel img');
+                    
+                            function showImage(index) {
+                                images[currentIndex].classList.remove('active');
+                                currentIndex = (index + images.length) % images.length;
+                                images[currentIndex].classList.add('active');
+                            }
+                    
+                            function nextImage() {
+                                showImage(currentIndex + 1);
+                            }
+                    
+                            function prevImage() {
+                                showImage(currentIndex - 1);
+                            }
+                        </script>
+                    </div> 
+            </div>
+        
+        </div>
+        </div>
+    </body>
+</html>

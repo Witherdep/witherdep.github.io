@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <title>Wither comissions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <link href="../arquivos iniciais/css/bootstrap.min.css" rel="stylesheet">
+
+        <style>
+            ul{
+                text-align: center;
+            }
+            a{
+                text-decoration: none;
+            }
+            li{
+                background-color: crimson;
+                margin: 2px;
+                margin-right: 80%;
+                list-style: none;
+                text-decoration: none;
+                margin-bottom: 1px;
+                padding: 5px 25px;
+                color: aquamarine;
+                margin-left: 2px;
+                border-radius: 5vw;
+                float: left;
+                width: 100px;
+                max-width: 100px;
+                
+            }
+            a li:hover{
+                background-color: rgb(247, 136, 158);
+                width: 110px;
+                max-width: 110px;
+            }
+            .carousel {
+                position: relative;
+                width: 80%;
+                max-width: 600px;
+                overflow: hidden;
+                border: 2px solid #ddd;
+                border-radius: 10px;
+                background-color: #fff;
+            }
+
+            .carousel img {
+                height: 100%;
+                display: none;
+                
+                
+            }
+
+            .carousel img.active {
+                display: block;
+            }
+
+            .controls {
+                position: absolute;
+                top: 50%;
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                transform: translateY(-50%);
+            }
+
+            .control {
+                background-color: rgba(0, 0, 0, 0.5);
+                color: #fff;
+                padding: 10px;
+                cursor: pointer;
+                user-select: none;
+            }
+
+            #containerzinho{
+                display: flex;
+                background-color: blanchedalmond;
+                width: 3500px;
+                height: 650px;
+                margin: 0 auto;
+                margin-right: 150px;
+                justify-content: center;
+                align-items: center;
+                align-content: center;
+                justify-items: center;
+            }
+            #titulo{
+                text-align: center;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-weight: 900;
+                background-color: cornsilk ;
+                width: 95%;
+                margin: 0 auto;
+                padding: 10px 0px;
+                margin-bottom: 5px ;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <div class="container-fluid">
+            <h2 id="titulo">Menu de páginas criadas</h2>
+        <div style="justify-content: space-between;align-items: center;justify-items: center; display: flex; width: 95%; height: 100%; background-color: cornsilk; padding: 10px 0px; margin: 0 auto;">
+            <ul class="col-sm-6" style="margin-left: 5%;">
+                <a href="pagina1.html" target="_blank"><li>página 1</li></a>
+                <a href="pagina2.html"target="_blank"><li>página 2</li></a>
+                <a href="pagina3.html"target="_blank"><li>página 3</li></a>
+                <a href="pagina4.html"target="_blank"><li>página 4</li></a>
+                <a href="pagina5.html"target="_blank"><li>página 5</li></a>
+                <a href="pagina6.html"target="_blank"><li>página 6</li></a>
+                <a href="pagina7.html"target="_blank"><li>página 7</li></a>
+                <a href="pagina8.html"target="_blank"><li>página 8</li></a>
+                <a href="pagina9.html"target="_blank"><li>página 9</li></a>
+                <a href="pagina10.html"target="_blank"><li>página 10</li></a>
+                <a href="pagina11.html"target="_blank"><li>página 11</li></a>
+                <a href="pagina12.html"target="_blank"><li>menu (essa)</li></a>
+                <a href="eldenring.html"target="_blank"><li>eldenring</li></a>
+                <a href="pagina14.html"target="_blank"><li>página 14</li></a>
+                <a href="pagina15.html"target="_blank"><li>página 15</li></a>
+                <a href="restaurante.html"target="_blank"><li>restaurante</li></a>
+                <a href="sorvete.html"target="_blank"><li>sorvete</li></a>
+                
+                <a href="C:\xampp\htdocs\projetos\public\carrinho.html"target="_blank"><li>carrinho</li></a>
+                <a href="C:\xampp\htdocs\projetos\public\quadrado.html"target="_blank"><li>quadrado</li></a>
+                <a href="C:\xampp\htdocs\projetos\public\carrosselimagens.html"target="_blank"><li>carrossel de imagens</li></a>
+                <a href="C:\xampp\htdocs\projetos\public\slideJS.html"target="_blank"><li>slideupslidedown</li></a>
+            </ul>
+
+            <div id="containerzinho" class="col-sm-6">
+                <div class="carousel divcentro" style="margin: 0 auto; width: auto; height: 350px; background-color: rgb(199, 179, 101);">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/073/097/906/large/wither-dep-deathbringer-completo-tortinho2.jpg?1708920886" alt="Imagem 1" class="active">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/073/098/502/large/wither-dep-geropronto1-artstation.jpg?1708922663" alt="Imagem 2">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/073/098/710/large/wither-dep-tonicos-artstation.jpg?1708923223" alt="Imagem 3">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/073/098/838/large/wither-dep-yardas1.jpg?1708923412" alt="Imagem 4">
+                    <img src="https://cdna.artstation.com/p/assets/images/images/073/790/512/large/wither-dep-frechafim.jpg?1710476563" alt="Imagem 5">
+                    <div class="controls">
+                        <div class="control" onclick="prevImage()">&#10094;</div>
+                        <div class="control" onclick="nextImage()">&#10095;</div>
+                    </div>
+                </div>
+                <script>
+                    let currentIndex = 0;
+                    const images = document.querySelectorAll('.carousel img');
+            
+                    function showImage(index) {
+                        images[currentIndex].classList.remove('active');
+                        currentIndex = (index + images.length) % images.length;
+                        images[currentIndex].classList.add('active');
+                    }
+            
+                    function nextImage() {
+                        showImage(currentIndex + 1);
+                    }
+            
+                    function prevImage() {
+                        showImage(currentIndex - 1);
+                    }
+                    $(document).ready(function(){
+                        setInterval(nextImage,4500);
+                        
+                    });
+                </script>    
+            </div>
+        </div>
+        </div>
+    </body>
+</html>
