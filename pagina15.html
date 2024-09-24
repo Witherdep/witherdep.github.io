@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Concurso</title>
+    <link href="../arquivos iniciais/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+    *{margin: 0;padding: 0;box-sizing: border-box;} 
+
+    #fundo{
+        height: auto;
+        width: auto;
+        margin: 50px;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: antiquewhite;
+    }
+    h3{
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+
+        padding-top: 10px;
+    }
+
+    .reto{
+        margin: 25px;
+        padding-left: 50px;
+        display: table;
+        margin-bottom: 0px;
+    }
+    .torto{
+        margin: 25px;
+        padding-left: 50px;
+        margin-top: 5px;
+    }
+    label{
+        line-height: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 350;
+    }
+
+    label,input,select,ul {
+        display: table-cell;
+        margin: 5px;
+    }
+    
+    .form{
+        display: table-row;
+    }
+    form{
+        max-width: 450px;
+    }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div id="fundo">
+        <h3>Formulário para inscrição</h3>
+        <form class="reto">
+        <div class="form">
+            <label for="nome">Nome completo:</label>
+            <input type="text" id="fname" name="nome" required><br>
+        </div>
+        <div class="form">
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required><br>
+        </div>
+        <div class="form">
+            <label for="sexo">Sexo:</label>
+            <select id="sexo" name="sexo" required>
+                <option value="default"></option>
+                <option value="m">Masculino</option>
+                <option value="f">Feminino</option>
+                <option value="o">Outro</option>
+                
+            </select><br>
+        </div>
+        <div class="form">
+            <label for="nasc">Nascimento:</label>
+            <input type="date" id="nasc" name="nasc" required><br>
+        </div>
+        <div class="form">
+            <label for="end">Endereço:</label>
+            <textarea type="text" id="end" name="end" required style="height: 50px"></textarea><br>
+        </div>
+        <div class="form">
+            <label for="tel">Telefone:</label>
+            <input type="tel" id="tel" name="tel" ><br>
+        </div>
+        <div class="form">
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" name="cidade" required><br>
+        </div>
+        <div class="form">
+            <label for="estado">Estado:</label>
+            <select id="estado" name="estado" required>
+                <option value="default"></option>
+                <option value="AC">AC</option>
+                <option value="AL">AL</option>
+                <option value="AP">AP</option>
+                <option value="AM">AM</option>
+                <option value="BA">BA</option>
+                <option value="CE">CE</option>
+                <option value="ES">ES</option>
+                <option value="GO">GO</option>
+                <option value="MA">MA</option>
+                <option value="MT">MT</option>
+                <option value="MS">MS</option>
+                <option value="MG">MG</option>
+                <option value="PA">PA</option>
+                <option value="PB">PB</option>
+                <option value="PR">PR</option>
+                <option value="PE">PE</option>
+                <option value="PI">PI</option>
+                <option value="RJ">RJ</option>
+                <option value="RN">RN</option>
+                <option value="RS">RS</option>
+                <option value="RO">RO</option>
+                <option value="RR">RR</option>
+                <option value="SC">SC</option>
+                <option value="SP">SP</option>
+                <option value="SE">SE</option>
+                <option value="TO">TO</option>
+                <option value="DF">DF</option>
+            </select><br>
+        </div>
+        <div class="form">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" required><br>
+        </div>
+        <div class="form">
+            <label for="cargo">Cargo:</label>
+            <input type="text" id="cargo" name="cargo" required><br>
+        </div>
+        </form>
+        <form class="torto">
+            <label for="pcd" style="display: inline-flex; margin: 0;">PCD:</label>
+            <ul style="display: inline-flex;margin: 0;">
+            <label><input type="radio" value="sim" name="pcd" required>SIM</label>
+            <label><input type="radio" value="nao" name="pcd" required>NÃO</label>
+        </ul>
+            <br>
+            <label for="empr" style="display: inline-flex;margin: 0;">Empregado:</label>
+            <ul style="display: inline-flex;margin: 0;">
+            <label><input type="radio" value="sim" name="empr" required>SIM</label>
+            <label><input type="radio" value="nao" name="empr" required>NÃO</label>
+            </ul> 
+            <br>      
+            <label for="setor"style="display: inline-flex;margin: 0;">Setor:</label><br>
+            <ul style="justify-content: center;display: flex;flex-direction: column;">
+            <label style="display: inline-block;margin-left: 50px;"><input type="checkbox" name="setor" value="compra" >Compra</label>
+            <label style="display: inline-block;margin-left: 50px;"><input type="checkbox" name="setor" value="venda" >Venda</label>
+            <label style="display: inline-block;margin-left: 50px;"><input type="checkbox" name="setor" value="financeiro" >Financeiro</label>
+            <label style="display: inline-block;margin-left: 50px;"><input type="checkbox" name="setor" value="ti" >TI</label>
+            <label style="display: inline-block;margin-left: 50px;"><input type="checkbox" name="setor" value="rh" >RH</label>
+            <label style="display: inline-block;margin-left: 50px;"><input type="checkbox" name="setor" value="contabilidade" >Contabilidade</label>
+            </ul>
+            <br>
+
+            <br>
+            <input type="submit" value="Enviar" style="margin: 0 auto;display: flex;">
+            
+
+
+          </form>
+
+    </div>
+    </div>
+</body>
+</html>
