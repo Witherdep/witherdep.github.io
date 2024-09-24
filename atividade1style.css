@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+nav{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    color: white;
+
+}
+
+#logo{
+    width: 150px;
+    margin-left: 20px;
+}
+
+.menu{
+    list-style: none;
+}
+
+.menu a:hover{
+    color: yellow;
+}
+
+.container{
+    min-height: 100vh;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhh2ZMlrQ20KQaPPmK61gzE20KMF9Vuds_0gfEbsWKNZxp2XimU3F4ltRToi4jSurEEpuKeUQnecpd5EgnynvUCXRUUeghwNLiepV0FtxTiW7ZN7PuOzN3Ldv-Xyj0HmVaBfO8fmX2skvvu/w0/mordekaiser-new-splash-art-lol-4K-96.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+
+p span{
+    font-family: 'Friz Quadrata Std', sans-serif;;
+    color: #dba632;
+    font-weight: 900;
+    font-size: 35px;
+}
+
+p img{
+    vertical-align: middle;
+    width: 200px;
+}
+
+.container h3{
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 19px;
+    text-align: center;
+    color: #08201E;
+
+    
+}
+
+img{
+    width: 1000px;
+    margin-top: 15px;
+}
+
+p{
+    font-family: 'Friz Quadrata Std', sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    text-align: center;
+    color: rgba(218, 167, 92, 0.9);
+}
+
+.btns{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 72px;
+}
+.btns a{
+    padding: 15px 30px;
+    font-family: inter;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(8,32,30,0.6);
+    color: rgba(255,255,255,0.6);
+}
+
+.btns a:hover{
+    background-color: rgba(0,0,0,0.8);
+}
